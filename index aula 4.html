@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTf-8">
+    <title>Descubra se você tem um coelho!</title>
+</head>
+
+<body>
+    <header>
+        <h1>Você tem um coelho?</h1>
+    </header>
+
+    <main>
+        <form action="https://postman-echo.com/post" method="POST">
+
+            <fieldset>
+                <legend>Informações do coelho</legend> 
+
+                <div>
+                    <label for="nome">Qual é o nome do seu coelho?</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: Thumper" required>
+                </div>
+
+                <div>
+                    <label for="idade">Quantos anos ele tem?</label>
+                    <input type="number" id="idade" name="idade" min="0" max="15">
+                </div>
+
+                <div>
+                    <label for="raca">Qual é a raça dele?</label>
+                    <select id="raca" name="raca">
+                        <option value="">Selecione uma raça</option>
+                        <option value="mini-lop">Mini Lop</option>
+                        <option value="holland-lop">Holland Lop</option>
+                        <option value="angora">Angorá</option>
+                       <option value="sem raça definida">Angorá</option>
+                        <option value="outra">Outra</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Seu coelho é macho ou fêmea?</p>
+
+                    <input type="radio" id="macho" name="sexo" value="macho">
+                    <label for="macho">Macho</label>
+
+                    <input type="radio" id="femea" name="sexo" value="femea">
+                    <label for="femea">Fêmea</label>
+                </div>
+
+                <div>
+                    <label for="cor">Qual é a cor do seu coelho?</label>
+                    <input type="text" id="cor" name="cor" placeholder="Ex: Branco e cinza">
+                </div>
+
+                <div>
+                    <label for="peso">Qual é o peso dele (em kg)?</label>
+                    <input type="number" id="peso" name="peso" min="0" max="10" step="0.1">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Cuidados e rotina</legend>
+
+                <div>
+                    <p>Seu coelho gosta de brincar?</p>
+
+                    <input type="radio" id="brinca-sim" name="brinca" value="sim">
+                    <label for="brinca-sim">Sim</label>
+
+                    <input type="radio" id="brinca-nao" name="brinca" value="nao">
+                    <label for="brinca-nao">Não</label>
+                </div>
+
+                <div>
+                    <label for="comida">Qual é a comida favorita dele?</label>
+                    <input type="text" id="comida" name="comida" placeholder="Ex: Feno ou cenoura">
+                </div>
+
+                <div>
+                    <label for="passeio">Quantas vezes por dia ele sai da gaiola para se exercitar?</label>
+                    <input type="number" id="passeio" name="passeio" min="0" max="10">
+                </div>
+
+                <div>
+                    <label for="brinquedo">Qual é o brinquedo favorito dele?</label>
+                    <input type="text" id="brinquedo" name="brinquedo" placeholder="Ex: Túnel ou bolinha de feno">
+                </div>
+
+                <div>
+                    <input type="checkbox" id="vacinado" name="vacinado">
+                    <label for="vacinado">Meu coelho está com as vacinas em dia.</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Contato e informações adicionais</legend>
+
+                <div>
+                    <label for="telefone">Digite seu telefone:</label>
+                    <input type="tel"
+                           id="telefone"
+                           name="telefone"
+                           placeholder="11999999999"
+                           pattern="[0-9]{11}">
+
+                </div>
+
+                <div>
+                    <label for="observacao">Conte algo divertido sobre seu coelho:</label>
+                    <textarea id="observacao" name="observacao" placeholder="Escreva aqui..."></textarea>
+                </div>
+
+            </fieldset>
+
+            <div>
+                <button type="submit">Enviar formulário</button>
+                <button type="reset">Limpar</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
